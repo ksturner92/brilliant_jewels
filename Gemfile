@@ -7,7 +7,6 @@ gem 'pg', '0.15.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-	gem 'sqlite3'
 	gem 'rspec-rails', '2.13.1'
 end
 
@@ -24,6 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.2.1'
+gem 'holder_rails'
 
 group :test do
 	gem 'selenium-webdriver', '2.0.0'
