@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Jewels Nocera | <%=yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+  		<title>Jewels Nocera | <%=yield(:title) %></title>
+  		<%= stylesheet_link_tag    "application", media: "all" %>
+ 		<%= javascript_include_tag "application" %>
+  		<%= csrf_meta_tags %>
+  		<script src="holder.js"></script>
+  		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav>
+			<div class="tabbable tabs-left"> 
+  				<ul class="nav nav-tabs">
+    				<li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+    				<li><a href="#About" data-toggle="tab">About</a></li>
+    				<li><a href="#Work" data-toggle="tab">Work</a></li>
+    				<li><a href="#Contact" data-toggle="tab">Contact</a></li>
+  				</ul>
 
-<%= yield %>
-<script src="holder.js"></script>
-
-</body>
+  				<div class="tab-content">
+    				<div class="tab-pane active" id="Home"></div>
+    				<div class="tab-pane" id="About"></div>
+    				<div class="tab-pane" id="Work"></div>
+					<div class="tab-pane" id="Contact"></div>
+  				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<%= yield %>
+		</div>
+	</body>
 </html>

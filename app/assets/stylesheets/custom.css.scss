@@ -1,0 +1,41 @@
+@import "bootstrap";
+
+/* universal */
+
+body {
+background-color:#A9A9A9
+}
+
+/* images */
+
+#home_image {
+	position: absolute;
+	width: 1060px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#home_image {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#images_hz {
+width: 1060px;
+height: auto;
+overflow: hidden;
+margin-left: auto; 
+margin-right: auto;
+}
+
+#images_hz img {
+display: inline;
+margin-left: auto;
+margin-right: 20px;
+}
+
+/* header */
+
+/* footer */
