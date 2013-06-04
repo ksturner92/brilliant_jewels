@@ -4,32 +4,32 @@ describe "StaticPages" do
 
   describe "Home page" do
    
-    it "should have the content 'Jewels Nocera'" do
-      visit '/static_pages/home'
+    it "should have the header 'Jewels Nocera'" do
+      visit root_path
       expect(page).to have_content('Jewels Nocera')
     end
   end
 
   describe "About page" do 
 
-  	it "should have the content 'About'" do
-  		visit '/static_pages/about'
+  	it "should have the h1 'About'" do
+  		visit about_path
   		expect(page).to have_content('About')
   	end
   end
 
   describe "Contact page" do 
 
-  	it "should have the content 'Contact'" do
-  		visit '/static_pages/contact'
+  	it "should have the h1 'Contact'" do
+  		visit contact_path
   		expect(page).to have_content('Contact')
   	end
   end
 
   describe "Work page" do
 
-  	it "should have the content 'Work'" do
-  		visit '/static_pages/work'
+  	it "should have the h1 'Work'" do
+  		visit work_path
   		expect(page).to have_content('Work')
   	end
   end
