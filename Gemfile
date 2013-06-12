@@ -4,6 +4,9 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'holder_rails'
+gem 'rmagick'
+gem 'carrierwave'
+gem 'activeadmin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
