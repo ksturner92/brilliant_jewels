@@ -1,16 +1,7 @@
 class ArtworksController < ApplicationController
-	def painting 
+	def index
 	end
 
-	def ceramics 
-	end
-
-	def drawing 
-	end
-
-	def mixed_media
-	end
-
-	def film 
+	def show
 	end
 end
