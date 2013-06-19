@@ -6,14 +6,12 @@ BrilliantJewels::Application.routes.draw do
   match '/work',    to: 'static_pages#work', via: 'get'
   match '/about',   to: 'static_pages#about', via: 'get'
 
-  get "artworks/paintings"
-  get "artworks/ceramics"
-  get "artworks/drawing"
-  get "artworks/mixed_media"
-  get "artworks/film"
+  resources :artworks do 
+    resources :paintings, :ceramics, :drawings, :film, :mixed_media
+  end
 
-    devise_for :admin_users, ActiveAdmin::Devise.config
-    ActiveAdmin.routes(self)
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
